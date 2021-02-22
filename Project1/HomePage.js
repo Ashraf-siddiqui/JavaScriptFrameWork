@@ -1,4 +1,4 @@
-const homepage=require('./pages/homepage')
+const homepage=require('../pages/HomePage')
 
 describe('This is the describe block',function(){
  

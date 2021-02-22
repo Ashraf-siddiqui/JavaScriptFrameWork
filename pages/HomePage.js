@@ -1,7 +1,7 @@
 const{Builder,By,Key,until}=require('selenium-webdriver');
 const { Driver } = require('selenium-webdriver/chrome');
 const { elementIsVisible } = require('selenium-webdriver/lib/until');
-var BasePage1=require('./basepage');
+var BasePage=require('./basepage');
 
 //var webdriver=require('selenium-webdriver');
 
@@ -15,7 +15,7 @@ ClearButton=By.xpath("//*[text()='CLEAR']");
 moveToReffrealTypeURL()
 {
 
-    BasePage1.go_to_url('https://dev.mhea.myhealthcare.co/ReferralType');
+    super.go_to_url('https://dev.mhea.myhealthcare.co/ReferralType');
 }
 
 
